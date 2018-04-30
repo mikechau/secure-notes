@@ -1,14 +1,18 @@
 {
   "name": "create-next-example-app",
   "scripts": {
-    "dev": "next",
+    "dev": "nodemon server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
     "express": "^4.16.3",
     "next": "6.0.0",
     "react": "16.3.2",
     "react-dom": "16.3.2"
+  },
+  "devDependencies": {
+    "cross-env": "^5.1.4",
+    "nodemon": "^1.17.3"
   }
 }
